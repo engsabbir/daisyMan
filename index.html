@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="cupcake">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DaisyMan</title>
+    <title>DaisyMan | Your one-stop destination for all your fashion needs</title>
     <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
 
     <!-- daisy and tailwindcss cdn  -->
@@ -20,8 +20,8 @@
         tailwind.config = {
             theme: {
                 extend: {
-                    colors: {
-                        clifford: '#da373d',
+                    backgroundImage:{
+                        'banner-bg':"url('./images/yellow-bg.jpg')"
                     }
                 }
             }
@@ -35,11 +35,13 @@
 </head>
 
 <body class="font-family">
+    <!-- header start -->
     <header>
+        <!-- nav bar start  -->
         <nav>
             <div class="navbar bg-base-100">
                 <div class="flex-1">
-                  <a class="btn btn-ghost normal-case text-3xl">DaisyMan</a>
+                  <a class="btn btn-ghost normal-case text-2xl">DaisyMan</a>
                 </div>
                 <div class="flex-none">
                   <div class="dropdown dropdown-end">
@@ -79,6 +81,19 @@
                 </div>
               </div>
         </nav>
+        <!-- banner section start  -->
+        <section>
+            <div class="hero min-h-[calc(100vh-66px)] bg-banner-bg">
+                <div class="hero-overlay bg-opacity-60"></div>
+                <div class="hero-content text-center text-neutral-content">
+                  <div class="max-w-md">
+                    <h1 class="mb-5 text-5xl font-bold">Welcome To DaisyMan</h1>
+                    <p class="mb-5">Your one-stop destination for all your fashion needs. At DaisyMan, we believe that style is a reflection of your unique personality and our mission is to provide you with a diverse and trendy collection.</p>
+                    <button class="btn">Shop Now</button>
+                  </div>
+                </div>
+              </div>
+        </section>
     </header>
     <main></main>
     <footer></footer>
